@@ -1,7 +1,7 @@
 import socket
 import threading
 
-HOST = "127.0.0.1"
+HOST = "127.0.0.1" # ou 0.0.0.0 para todos os
 PORT = 5000
 
 clientes = []
