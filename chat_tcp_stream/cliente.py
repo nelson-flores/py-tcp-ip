@@ -6,7 +6,7 @@ PORT = 5000
 
 
 def receber_mensagens(cliente):
-    """Escuta mensagens do servidor."""
+    #Escuta mensagens do servidor
     while True:
         try:
             mensagem = cliente.recv(1024)
@@ -26,7 +26,7 @@ def receber_mensagens(cliente):
 
 
 def enviar_mensagens(cliente):
-    """Lê entrada do utilizador e envia ao servidor."""
+    #Lê entrada do utilizador e envia ao servidor
     while True:
         try:
             mensagem = input()
