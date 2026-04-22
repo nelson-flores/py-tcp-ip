@@ -10,7 +10,7 @@ lock = threading.Lock()
 
 
 def enviar_para_todos(mensagem: bytes, cliente_origem=None):
-    """Envia a mensagem para todos os clientes conectados, exceto a origem."""
+    #Envia a mensagem para todos os clientes conectados, exceto a origem
     with lock:
         clientes_atuais = list(clientes)
 
@@ -23,7 +23,7 @@ def enviar_para_todos(mensagem: bytes, cliente_origem=None):
 
 
 def remover_cliente(cliente):
-    """Remove cliente e seu apelido das listas globais."""
+    #Remove cliente e seu apelido das listas globais
     with lock:
         if cliente in clientes:
             indice = clientes.index(cliente)
@@ -44,7 +44,7 @@ def remover_cliente(cliente):
 
 
 def lidar_com_cliente(cliente):
-    """Recebe mensagens de um cliente e retransmite aos demais."""
+    #Recebe mensagens de um cliente e retransmite aos demais
     while True:
         try:
             mensagem = cliente.recv(1024)
