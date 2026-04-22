@@ -1,4 +1,4 @@
-# py-tcp-ip
+# Comunicacao TCP STREAMS e HTTP com python
 
 
 Socket(Doc): https://docs.python.org/3/library/socket.html
