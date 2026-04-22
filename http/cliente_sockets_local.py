@@ -25,4 +25,5 @@ while True:
 
 client.close()
 
+
 print(response.decode("utf-8", errors="ignore"))
