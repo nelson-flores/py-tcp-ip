@@ -1,5 +1,6 @@
 # py-tcp-ip
 
 
-Socket(Doc): https://docs.python.org/3/library/socket.html?utm_source=chatgpt.com
-Threading(Doc): https://docs.python.org/3/library/threading.html?utm_source=chatgpt.com
+Socket(Doc): https://docs.python.org/3/library/socket.html
+Threading(Doc): https://docs.python.org/3/library/threading.html
+Requests(Doc): https://pypi.org/project/requests
